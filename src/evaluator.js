@@ -1,5 +1,5 @@
 function evaluateStock({ dividends, price, percentageChange }) {
-  const years = ['2025', '2024', '2023'];
+  const years = ['2025', '2024', '2023', '2022', '2021'];
   const values = years.map(year => parseFloat(dividends[year]) || 0);
   const avg = values.reduce((a, b) => a + b, 0) / values.length;
 
